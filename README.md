@@ -31,3 +31,6 @@ Acess modifier -> default, private, public, protected
 getter/setter to access class attributes
 object creation
 Constructor -> NoArgsConstructor, AllArgsConstructor
+
+Abstraction ->Interface
+Inheritence
