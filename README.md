@@ -34,3 +34,4 @@ Constructor -> NoArgsConstructor, AllArgsConstructor
 
 Abstraction ->Interface
 Inheritence
+Polymorphism ->Method overloading, Method overriding

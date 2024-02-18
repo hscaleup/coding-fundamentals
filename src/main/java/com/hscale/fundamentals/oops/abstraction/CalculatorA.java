@@ -7,7 +7,13 @@ public  class CalculatorA implements CalculationLite {
 
     @Override
     public int addition(int a, int b) {
+
         return a+b;
+    }
+
+    @Override
+    public int addition(int a, int b, int c) {
+        return a+b+c;
     }
 
     @Override

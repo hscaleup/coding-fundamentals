@@ -4,11 +4,11 @@ package com.hscale.fundamentals.emp;
  * @author Abhishek Kumar on 16/02/2024
  */
 public class Employee {
-  private   String empFirstname;
-   private String empLastname;
-   private long empId;
+    private String empFirstname;
+    private String empLastname;
+    private long empId;
     private int age;
-   private String department;
+    private String department;
 
     public Employee(String empFirstname, String empLastname, long empId, int age, String department) {
         this.empFirstname = empFirstname;

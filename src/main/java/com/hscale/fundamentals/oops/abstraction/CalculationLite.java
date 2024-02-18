@@ -5,6 +5,7 @@ package com.hscale.fundamentals.oops.abstraction;
  */
 public interface CalculationLite {
     int addition(int a,int b);
+    int addition(int a,int b,int c);
     int subtraction(int a,int b);
 
 

@@ -15,4 +15,10 @@ public class CalculatorB extends CalculatorA implements CalculationPremium {
         return a*b;
     }
 
+    @Override
+    public int addition(int a, int b, int c) {
+        System.out.println("Value of a: "+a+" b: "+b+" c: "+c);
+        return a+b+c;
+    }
+
 }
