@@ -76,4 +76,13 @@ class PlayWithStringTest {
         assertEquals(expected,actual);
 
     }
+
+    @Test
+    void test_palindrome(){
+        String  str = "abba";
+        boolean actual =playWithString.palidromeOrNot(str);
+        boolean expected = true;
+        assertEquals(expected,actual);
+
+    }
 }

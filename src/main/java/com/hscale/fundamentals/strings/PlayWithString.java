@@ -49,4 +49,19 @@ public class PlayWithString {
         String str2 =originalString.substring(index+1);
         return str1+stringToBeInserted+str2;
     }
+
+    public boolean palidromeOrNot(String str) {
+        char[] chars = str.toCharArray();
+        String rev = "";
+            for (int i=chars.length-1;i>=0;i--){
+
+                rev = rev+chars[i];
+            }
+            if (str.equals(rev)){
+                return true;
+            }else {
+                return false;
+            }
+        }
+
 }
