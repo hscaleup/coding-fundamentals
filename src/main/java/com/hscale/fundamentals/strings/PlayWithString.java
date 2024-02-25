@@ -1,7 +1,9 @@
 package com.hscale.fundamentals.strings;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author Abhishek Kumar on 21/02/2024
@@ -64,4 +66,34 @@ public class PlayWithString {
             }
         }
 
+    public boolean checkAnagram(String str1, String str2) {
+        Map<Character,Integer>  mapA = new HashMap<>();
+        Map<Character,Integer>  mapB = new HashMap<>();
+        if(str1.length() ==str2.length()){
+            char[] strA = str1.toCharArray();
+            char[] strB = str2.toCharArray();
+
+            for (int i = 0;i<strA.length;i++){
+                if (mapA.containsKey(strA[i])){
+                    mapA.put(strA[i],mapA.get(strA[i])+1);
+                }else {
+                   mapA.put(strA[i],1) ;
+                }
+            }
+            System.out.println("Map A: "+mapA);
+            for (int i = 0;i<strB.length;i++){
+                if (mapB.containsKey(strB[i])){
+                    mapB.put(strB[i],mapB.get(strB[i])+1);
+                }else {
+                    mapB.put(strB[i],1) ;
+                }
+
+            }
+            System.out.println("Map B: "+mapB);
+        }
+        if (mapA.equals(mapB)){
+            return true;
+        }
+        return false;
+    }
 }

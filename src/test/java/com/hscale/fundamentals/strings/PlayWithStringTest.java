@@ -85,4 +85,13 @@ class PlayWithStringTest {
         assertEquals(expected,actual);
 
     }
+    //Program to Check Two Strings Are Anagram Of Each Other in Java
+    @Test
+    void test_anagram(){
+        String str1="apple";
+        String str2 = "eappl";
+        boolean actual = playWithString.checkAnagram(str1,str2);
+        boolean expected = true;
+        assertEquals(expected,actual);
+    }
 }

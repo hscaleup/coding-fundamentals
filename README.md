@@ -40,3 +40,5 @@ how to create method/Function
 How to create Junit test 
 Play with String problmes
 https://www.geeksforgeeks.org/java-string-programs/ -Refer here for String problme
+map->HashMap, iteration in map, compare two maps
+check anagram using map
