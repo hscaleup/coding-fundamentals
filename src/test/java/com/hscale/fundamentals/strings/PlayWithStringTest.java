@@ -94,4 +94,12 @@ class PlayWithStringTest {
         boolean expected = true;
         assertEquals(expected,actual);
     }
+
+    @Test
+    void test_reverseString(){
+        String str1 = "abc";
+        String actual = playWithString.reversestring(str1);
+        String expected = "cba";
+        assertEquals(expected,actual);
+    }
 }
