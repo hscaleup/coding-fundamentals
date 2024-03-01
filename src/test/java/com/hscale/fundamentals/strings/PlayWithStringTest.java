@@ -42,22 +42,22 @@ class PlayWithStringTest {
 
     // Write a Java program to get the character at the given index within the string.
     @Test
-    void test_CharacterWithIndex(){
+    void test_CharacterWithIndex() {
         String str = "Java Exercises!";
         int index = 6;
-        char actual = playWithString.getCharacterFromIndex(str,index);
+        char actual = playWithString.getCharacterFromIndex(str, index);
         char expected = 'x';
-        assertEquals(expected,actual);
+        assertEquals(expected, actual);
     }
     //write a Java program to print all words with even length in the given string.
     //Input: s = "This is a java language"
 
     @Test
-    void test_PrintEvenWords(){
+    void test_PrintEvenWords() {
         String s = "This is a java language";
         String actual = playWithString.printSentenceWithEvenWords(s);
-        String expected= "This is java language";
-        assertEquals(expected,actual);
+        String expected = "This is java language";
+        assertEquals(expected, actual);
 
     }
     //Insert a String into another String in Java
@@ -67,39 +67,66 @@ class PlayWithStringTest {
     //Output: "GeeksForGeeks"
 
     @Test
-    void test_insertStringAtGivenIndex(){
+    void test_insertStringAtGivenIndex() {
         String originalString = "GeeksGeeks";
         String stringToBeInserted = "For";
         int index = 4;
-        String actual = playWithString.insertStringAtGivenIndex(originalString,stringToBeInserted,index);
+        String actual = playWithString.insertStringAtGivenIndex(originalString, stringToBeInserted, index);
         String expected = "GeeksForGeeks";
-        assertEquals(expected,actual);
+        assertEquals(expected, actual);
 
     }
 
     @Test
-    void test_palindrome(){
-        String  str = "abba";
-        boolean actual =playWithString.palidromeOrNot(str);
+    void test_palindrome() {
+        String str = "abba";
+        boolean actual = playWithString.palidromeOrNot(str);
         boolean expected = true;
-        assertEquals(expected,actual);
+        assertEquals(expected, actual);
 
     }
+
     //Program to Check Two Strings Are Anagram Of Each Other in Java
     @Test
-    void test_anagram(){
-        String str1="apple";
+    void test_anagram() {
+        String str1 = "apple";
         String str2 = "eappl";
-        boolean actual = playWithString.checkAnagram(str1,str2);
+        boolean actual = playWithString.checkAnagram(str1, str2);
         boolean expected = true;
-        assertEquals(expected,actual);
+        assertEquals(expected, actual);
     }
 
     @Test
-    void test_reverseString(){
+    void test_reverseString() {
         String str1 = "abc";
         String actual = playWithString.reversestring(str1);
         String expected = "cba";
+        assertEquals(expected, actual);
+    }
+
+    //Java Program to Add Characters to a String
+    @Test
+    void test_charactersToString() {
+        char cha = 'Y';
+        String str = "ABC";
+        String actual = playWithString.characterstoString(str, cha);
+        String expected = "YABC";
+        assertEquals(expected, actual);
+
+    }
+    //Java Program to get a character from a String
+    @Test
+    void test_getcharacterfromString()   {
+        String str = "abc";
+        int index= 1;
+        Character actual = playWithString.getCharacterfromString(str,index);
+        Character expected = 'b';
         assertEquals(expected,actual);
     }
+
+
+
+
+
+
 }

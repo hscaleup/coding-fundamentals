@@ -106,4 +106,13 @@ public class PlayWithString {
         }
         return reverseString;
     }
+
+
+    public String characterstoString(String str, char cha) {
+        return cha + str;
+    }
+
+    public char getCharacterfromString(String str, int index) {
+       return str.charAt(index);
+    }
 }
